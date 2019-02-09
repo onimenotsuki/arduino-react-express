@@ -24,8 +24,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
-            Aquí editaremos el código
+          <p
+            onClick={this.togglePower.bind(this)}
+          >
+            Prender o apagar
           </p>
         </header>
       </div>
