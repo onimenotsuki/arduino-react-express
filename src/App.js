@@ -5,6 +5,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = { isPower: false };
+    this.togglePower = this.togglePower.bind(this);
   }
 
   togglePower() {
@@ -27,7 +28,7 @@ class App extends Component {
           <p
             onClick={this.togglePower.bind(this)}
           >
-            Prender o apagar
+            {this.state.isPower ? 'Apagar' : 'Encender' } LED
           </p>
         </header>
       </div>
